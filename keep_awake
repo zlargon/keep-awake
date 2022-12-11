@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+const robot = require('robotjs');
+
+// Moving mouse 1px every 10 seconds
+let offset = 1;
+setInterval(() => {
+  let { x, y } = robot.getMousePos();
+  robot.moveMouse(x, y + offset);
+  offset *= -1;
+}, 60 * 1000);
+
+console.log('Keep Your Computer Awake!!');

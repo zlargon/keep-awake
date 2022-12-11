@@ -1,0 +1,10 @@
+{
+  "name": "keep_awake",
+  "license": "MIT",
+  "bin": {
+    "keep_awake": "./keep_awake"
+  },
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
+}
